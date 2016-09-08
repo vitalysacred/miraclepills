@@ -15,20 +15,73 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="KXG-f2-opE">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="101" id="2zs-FA-m9x"/>
-                                    <constraint firstAttribute="width" constant="101" id="ut9-fY-4yU"/>
+                                    <constraint firstAttribute="height" constant="100" id="2zs-FA-m9x"/>
+                                    <constraint firstAttribute="width" constant="100" id="ut9-fY-4yU"/>
                                 </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIRACLE PILLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3e-ua-C87">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="XKZ-yh-lAU"/>
+                                    <constraint firstAttribute="width" constant="133" id="nAI-hm-I1H"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$150" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VFu-7c-CUn">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="6Kl-nt-YdV"/>
+                                    <constraint firstAttribute="width" constant="39" id="YRd-Ec-92k"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view alpha="0.34999999999999998" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y5K-H2-p0Y" userLabel="Diveder">
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="HjE-5f-o4j"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Full Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hbR-uK-xxg">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="uGL-Tg-4I3"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter your name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="266-ez-T1T">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="d5m-9q-b7d"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="hbR-uK-xxg" firstAttribute="trailing" secondItem="y5K-H2-p0Y" secondAttribute="trailing" id="0cv-C3-lGk"/>
+                            <constraint firstItem="VFu-7c-CUn" firstAttribute="top" secondItem="h3e-ua-C87" secondAttribute="bottom" constant="3" id="2VA-vt-2QV"/>
+                            <constraint firstItem="y5K-H2-p0Y" firstAttribute="top" secondItem="VFu-7c-CUn" secondAttribute="bottom" constant="10" id="85T-u5-Ujs"/>
+                            <constraint firstItem="266-ez-T1T" firstAttribute="leading" secondItem="hbR-uK-xxg" secondAttribute="leading" id="9a1-Ex-q6V"/>
+                            <constraint firstAttribute="trailing" secondItem="y5K-H2-p0Y" secondAttribute="trailing" constant="20" id="ARH-Xx-GHv"/>
+                            <constraint firstItem="VFu-7c-CUn" firstAttribute="centerX" secondItem="KXG-f2-opE" secondAttribute="centerX" id="GHY-5b-xfy"/>
+                            <constraint firstItem="hbR-uK-xxg" firstAttribute="leading" secondItem="y5K-H2-p0Y" secondAttribute="leading" id="JmX-Zq-LW6"/>
+                            <constraint firstItem="y5K-H2-p0Y" firstAttribute="centerX" secondItem="VFu-7c-CUn" secondAttribute="centerX" id="Kga-Hm-kmX"/>
+                            <constraint firstItem="h3e-ua-C87" firstAttribute="top" secondItem="KXG-f2-opE" secondAttribute="bottom" constant="25" id="NeI-6u-z9v"/>
+                            <constraint firstItem="hbR-uK-xxg" firstAttribute="top" secondItem="y5K-H2-p0Y" secondAttribute="bottom" constant="14" id="PE2-OA-rmI"/>
+                            <constraint firstItem="266-ez-T1T" firstAttribute="top" secondItem="hbR-uK-xxg" secondAttribute="bottom" constant="6" id="S52-R7-1H0"/>
+                            <constraint firstItem="h3e-ua-C87" firstAttribute="centerX" secondItem="KXG-f2-opE" secondAttribute="centerX" id="adw-3f-Zc2"/>
+                            <constraint firstItem="y5K-H2-p0Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="bQc-Zb-QWn"/>
                             <constraint firstItem="KXG-f2-opE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fSu-aR-CSp"/>
                             <constraint firstItem="KXG-f2-opE" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="22" id="jYV-Wn-gs3"/>
+                            <constraint firstItem="266-ez-T1T" firstAttribute="trailing" secondItem="hbR-uK-xxg" secondAttribute="trailing" id="qg5-Mk-1to"/>
                         </constraints>
                     </view>
                 </viewController>

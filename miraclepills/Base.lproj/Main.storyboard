@@ -120,7 +120,7 @@
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s2e-G2-IZ9">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="30" id="Wp1-vU-NHa"/>
+                                    <constraint firstAttribute="height" constant="20" id="Wp1-vU-NHa"/>
                                     <constraint firstAttribute="width" constant="125" id="wIH-50-B73"/>
                                 </constraints>
                                 <state key="normal" title="Choose your state"/>
@@ -204,8 +204,12 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="labelCountry" destination="MSJ-Zp-ChW" id="NDz-kQ-z3o"/>
+                        <outlet property="labelZipCode" destination="f1J-Yp-PoF" id="JTg-Ri-DVK"/>
                         <outlet property="statePicker" destination="OaP-6A-5zk" id="TmU-UM-BQe"/>
                         <outlet property="statePickerBtn" destination="s2e-G2-IZ9" id="Wy8-f6-Sha"/>
+                        <outlet property="textFieldCountry" destination="yk6-ib-YXG" id="Jil-RR-SJv"/>
+                        <outlet property="textFieldZipCode" destination="lJf-85-4CN" id="Dpe-42-dwE"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

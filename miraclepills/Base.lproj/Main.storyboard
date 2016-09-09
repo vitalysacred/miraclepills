@@ -20,8 +20,8 @@
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="KXG-f2-opE">
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="2zs-FA-m9x"/>
-                                    <constraint firstAttribute="width" constant="100" id="ut9-fY-4yU"/>
+                                    <constraint firstAttribute="height" constant="80" id="2zs-FA-m9x"/>
+                                    <constraint firstAttribute="width" constant="80" id="ut9-fY-4yU"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MIRACLE PILLS" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h3e-ua-C87">

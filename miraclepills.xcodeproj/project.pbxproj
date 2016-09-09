@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		EDD49F431D7F34CE00F4BFCA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD49F421D7F34CE00F4BFCA /* AppDelegate.swift */; };
 		EDD49F451D7F34CE00F4BFCA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD49F441D7F34CE00F4BFCA /* ViewController.swift */; };
-		EDD49F481D7F34CE00F4BFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD49F461D7F34CE00F4BFCA /* Main.storyboard */; };
+		EDD49F481D7F34CE00F4BFCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD49F461D7F34CE00F4BFCA /* Main.storyboard */; settings = {ASSET_TAGS = (city, ); }; };
 		EDD49F4A1D7F34CE00F4BFCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EDD49F491D7F34CE00F4BFCA /* Assets.xcassets */; };
 		EDD49F4D1D7F34CE00F4BFCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EDD49F4B1D7F34CE00F4BFCA /* LaunchScreen.storyboard */; };
 		EDD49F581D7F34CE00F4BFCA /* miraclepillsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EDD49F571D7F34CE00F4BFCA /* miraclepillsTests.swift */; };
@@ -187,6 +187,9 @@
 		EDD49F371D7F34CE00F4BFCA /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				KnownAssetTags = (
+					city,
+				);
 				LastSwiftUpdateCheck = 0800;
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Vitaly Sacred";
@@ -501,6 +504,7 @@
 				EDD49F691D7F34CE00F4BFCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDD49F6A1D7F34CE00F4BFCA /* Build configuration list for PBXNativeTarget "miraclepillsTests" */ = {
 			isa = XCConfigurationList;
@@ -509,6 +513,7 @@
 				EDD49F6C1D7F34CE00F4BFCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		EDD49F6D1D7F34CE00F4BFCA /* Build configuration list for PBXNativeTarget "miraclepillsUITests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +522,7 @@
 				EDD49F6F1D7F34CE00F4BFCA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

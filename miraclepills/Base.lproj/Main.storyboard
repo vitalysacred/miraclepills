@@ -18,6 +18,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="successIndicator" translatesAutoresizingMaskIntoConstraints="NO" id="gzD-Yx-cLs">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="180" id="KYh-Vb-46d"/>
+                                    <constraint firstAttribute="height" constant="180" id="MU4-vU-EgH"/>
+                                </constraints>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="miraclePillEmoji" translatesAutoresizingMaskIntoConstraints="NO" id="KXG-f2-opE">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="80" id="2zs-FA-m9x"/>
@@ -151,12 +157,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
+                            <button opaque="NO" contentMode="scaleAspectFit" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rRQ-eS-Ez3">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="225" id="HCX-ib-Kx0"/>
+                                    <constraint firstAttribute="height" constant="45" id="c81-xG-KAM"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="buyNowBtn"/>
+                                <connections>
+                                    <action selector="buyNowButtonPress:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qaR-Kn-Znl"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="hbR-uK-xxg" firstAttribute="trailing" secondItem="y5K-H2-p0Y" secondAttribute="trailing" id="0cv-C3-lGk"/>
                             <constraint firstItem="Dhn-TA-0ke" firstAttribute="trailing" secondItem="266-ez-T1T" secondAttribute="trailing" id="23U-eW-khA"/>
                             <constraint firstItem="VFu-7c-CUn" firstAttribute="top" secondItem="h3e-ua-C87" secondAttribute="bottom" constant="3" id="2VA-vt-2QV"/>
+                            <constraint firstItem="gzD-Yx-cLs" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="7Az-DC-GxW"/>
                             <constraint firstItem="y5K-H2-p0Y" firstAttribute="top" secondItem="VFu-7c-CUn" secondAttribute="bottom" constant="10" id="85T-u5-Ujs"/>
                             <constraint firstItem="266-ez-T1T" firstAttribute="leading" secondItem="hbR-uK-xxg" secondAttribute="leading" id="9a1-Ex-q6V"/>
                             <constraint firstAttribute="trailing" secondItem="y5K-H2-p0Y" secondAttribute="trailing" constant="20" id="ARH-Xx-GHv"/>
@@ -173,12 +190,14 @@
                             <constraint firstItem="MSJ-Zp-ChW" firstAttribute="leading" secondItem="IvI-0U-BMH" secondAttribute="leading" id="Oze-NR-uw8"/>
                             <constraint firstItem="hbR-uK-xxg" firstAttribute="top" secondItem="y5K-H2-p0Y" secondAttribute="bottom" constant="10" id="PE2-OA-rmI"/>
                             <constraint firstItem="MSJ-Zp-ChW" firstAttribute="top" secondItem="s2e-G2-IZ9" secondAttribute="bottom" constant="10" id="QfT-aQ-Kgi"/>
+                            <constraint firstItem="gzD-Yx-cLs" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="QwA-HV-eZg"/>
                             <constraint firstItem="266-ez-T1T" firstAttribute="top" secondItem="hbR-uK-xxg" secondAttribute="bottom" constant="1" id="S52-R7-1H0"/>
                             <constraint firstItem="Dhn-TA-0ke" firstAttribute="leading" secondItem="266-ez-T1T" secondAttribute="leading" id="SAh-bz-fIz"/>
                             <constraint firstItem="MSJ-Zp-ChW" firstAttribute="trailing" secondItem="IvI-0U-BMH" secondAttribute="trailing" id="TcI-Ts-Jq9"/>
                             <constraint firstItem="yk6-ib-YXG" firstAttribute="trailing" secondItem="MSJ-Zp-ChW" secondAttribute="trailing" id="Th3-A0-3z7"/>
                             <constraint firstItem="f1J-Yp-PoF" firstAttribute="leading" secondItem="yk6-ib-YXG" secondAttribute="leading" id="UWp-ae-5u5"/>
                             <constraint firstItem="lJf-85-4CN" firstAttribute="trailing" secondItem="f1J-Yp-PoF" secondAttribute="trailing" id="Uc8-1e-p6E"/>
+                            <constraint firstItem="rRQ-eS-Ez3" firstAttribute="centerX" secondItem="lJf-85-4CN" secondAttribute="centerX" id="VhA-we-V7B"/>
                             <constraint firstItem="oIt-wI-blz" firstAttribute="trailing" secondItem="cGl-c3-orF" secondAttribute="trailing" id="XYk-4e-ja6"/>
                             <constraint firstItem="oIt-wI-blz" firstAttribute="top" secondItem="cGl-c3-orF" secondAttribute="bottom" constant="1" id="Xu1-yW-f6G"/>
                             <constraint firstItem="OaP-6A-5zk" firstAttribute="top" secondItem="s2e-G2-IZ9" secondAttribute="bottom" constant="3" id="Ydx-YL-jtQ"/>
@@ -186,7 +205,7 @@
                             <constraint firstItem="ArY-hy-x10" firstAttribute="top" secondItem="Dhn-TA-0ke" secondAttribute="bottom" constant="1" id="akN-00-KLH"/>
                             <constraint firstItem="y5K-H2-p0Y" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="bQc-Zb-QWn"/>
                             <constraint firstItem="cGl-c3-orF" firstAttribute="trailing" secondItem="ArY-hy-x10" secondAttribute="trailing" id="f0b-kH-U5p"/>
-                            <constraint firstItem="IvI-0U-BMH" firstAttribute="top" secondItem="oIt-wI-blz" secondAttribute="bottom" constant="16" id="fQy-cP-MXx"/>
+                            <constraint firstItem="IvI-0U-BMH" firstAttribute="top" secondItem="oIt-wI-blz" secondAttribute="bottom" constant="10" id="fQy-cP-MXx"/>
                             <constraint firstItem="KXG-f2-opE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fSu-aR-CSp"/>
                             <constraint firstItem="f1J-Yp-PoF" firstAttribute="trailing" secondItem="yk6-ib-YXG" secondAttribute="trailing" id="gk9-p8-Ih3"/>
                             <constraint firstItem="lJf-85-4CN" firstAttribute="leading" secondItem="f1J-Yp-PoF" secondAttribute="leading" id="hrp-EV-rp7"/>
@@ -201,14 +220,28 @@
                             <constraint firstItem="s2e-G2-IZ9" firstAttribute="top" secondItem="IvI-0U-BMH" secondAttribute="bottom" id="x74-ea-xww"/>
                             <constraint firstItem="IvI-0U-BMH" firstAttribute="leading" secondItem="oIt-wI-blz" secondAttribute="leading" id="y7M-tc-kpI"/>
                             <constraint firstItem="cGl-c3-orF" firstAttribute="top" secondItem="ArY-hy-x10" secondAttribute="bottom" constant="10" id="yj2-cc-GJO"/>
+                            <constraint firstItem="rRQ-eS-Ez3" firstAttribute="top" secondItem="lJf-85-4CN" secondAttribute="bottom" constant="18" id="zkE-j4-d4C"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="ImageViewSuccses" destination="gzD-Yx-cLs" id="Gch-SX-Zbu"/>
+                        <outlet property="buyNowButton" destination="rRQ-eS-Ez3" id="d8C-ue-3ty"/>
+                        <outlet property="diveder" destination="y5K-H2-p0Y" id="USQ-Lj-OtV"/>
+                        <outlet property="imageOnTitle" destination="KXG-f2-opE" id="Viv-tS-VRy"/>
+                        <outlet property="labelAdress" destination="Dhn-TA-0ke" id="Dx9-Wd-dF9"/>
+                        <outlet property="labelCity" destination="cGl-c3-orF" id="Wdo-u8-0J5"/>
                         <outlet property="labelCountry" destination="MSJ-Zp-ChW" id="NDz-kQ-z3o"/>
+                        <outlet property="labelName" destination="hbR-uK-xxg" id="bZU-Gx-USY"/>
+                        <outlet property="labelPrice" destination="VFu-7c-CUn" id="S9u-jY-dto"/>
+                        <outlet property="labelState" destination="IvI-0U-BMH" id="VjI-2W-Vj0"/>
+                        <outlet property="labelTitle" destination="h3e-ua-C87" id="HaT-9t-GcV"/>
                         <outlet property="labelZipCode" destination="f1J-Yp-PoF" id="JTg-Ri-DVK"/>
                         <outlet property="statePicker" destination="OaP-6A-5zk" id="TmU-UM-BQe"/>
                         <outlet property="statePickerBtn" destination="s2e-G2-IZ9" id="Wy8-f6-Sha"/>
+                        <outlet property="textFieldAdress" destination="ArY-hy-x10" id="8WZ-vV-KeS"/>
+                        <outlet property="textFieldCity" destination="oIt-wI-blz" id="ZyP-oH-HcH"/>
                         <outlet property="textFieldCountry" destination="yk6-ib-YXG" id="Jil-RR-SJv"/>
+                        <outlet property="textFieldName" destination="266-ez-T1T" id="B4Q-cN-4BV"/>
                         <outlet property="textFieldZipCode" destination="lJf-85-4CN" id="Dpe-42-dwE"/>
                     </connections>
                 </viewController>
@@ -218,6 +251,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="buyNowBtn" width="225" height="45"/>
         <image name="miraclePillEmoji" width="90" height="90"/>
+        <image name="successIndicator" width="180" height="180"/>
     </resources>
 </document>
